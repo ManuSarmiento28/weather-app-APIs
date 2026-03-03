@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(25, 25, 30); 
+  color: white;
+  overflow: hidden;
+}
+
+#ui {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px dashed white;
+  background: transparent;
+  color: white;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+
+#sun {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 200, 0, 0.6);
+  opacity: 0;
+}
+
+
+#cloud {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 60px;
+  background: lightgray;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+#cloud::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: lightgray;
+  border-radius: 50%;
+  top: -30px;
+  left: 20px;
+}
+
+#cloud::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: lightgray;
+  border-radius: 50%;
+  top: -40px;
+  right: 20px;
+}
+
+
+#rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.drop {
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  background: white;
+  animation: fall linear forwards;
+}
+
+}
