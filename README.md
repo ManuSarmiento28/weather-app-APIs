@@ -37,6 +37,3 @@ This project was created for a class assignment using HTML, CSS, JavaScript, and
 4. The app suggests clothing based on the temperature.
 5. The visuals update depending on the weather conditions.
 
-## Author
-
-Manuela Sarmiento
